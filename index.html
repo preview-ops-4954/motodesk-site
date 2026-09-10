@@ -97,6 +97,11 @@ section .sub{max-width:44em;margin:0 0 30px}
 .card p{margin:0;font-size:14px}
 .card .k{display:block;margin-bottom:8px}
 .cards.two{grid-template-columns:repeat(2,1fr)}
+.board{background:var(--card);border:2px solid var(--line);box-shadow:6px 6px 0 var(--shadow)}
+.board .row{display:grid;grid-template-columns:300px 1fr;gap:20px;padding:15px 20px;border-bottom:2px solid var(--line);align-items:baseline}
+.board .row:last-child{border-bottom:0}
+.board h3{font-size:22px;text-transform:uppercase;margin:0}
+.board p{margin:0;font-size:14px}
 
 /* Demo */
 .video-frame{border:2px solid var(--line);box-shadow:6px 6px 0 var(--shadow);background:#000}
@@ -111,7 +116,7 @@ section .sub{max-width:44em;margin:0 0 30px}
 .steps{counter-reset:step;list-style:none;margin:0;padding:0;display:grid;gap:14px}
 .steps li{counter-increment:step;background:var(--card);border:2px solid var(--line);box-shadow:5px 5px 0 var(--shadow);padding:16px 18px 16px 64px;position:relative}
 .steps li::before{content:counter(step,decimal-leading-zero);position:absolute;left:16px;top:16px;font-family:'Barlow Condensed',Arial,sans-serif;font-size:28px;font-weight:700;color:var(--accent)}
-.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.facts{margin:22px 0 0;font-size:13px;font-weight:600;letter-spacing:.08em;color:var(--muted);text-transform:uppercase}
 
 /* FAQ */
 details{background:var(--card);border:2px solid var(--line);box-shadow:4px 4px 0 var(--shadow);margin-bottom:12px;padding:0}
@@ -136,6 +141,7 @@ footer .fine{width:100%;font-size:11px;color:var(--muted);margin-top:14px}
 @media (max-width:860px){
   .hero .grid{grid-template-columns:1fr}
   .cards,.cards.two{grid-template-columns:1fr}
+  .board .row{grid-template-columns:1fr;gap:4px}
   .hero{padding:40px 0 36px}
   section{padding:40px 0}
   .btn{width:100%;text-align:center}
@@ -192,13 +198,13 @@ footer .fine{width:100%;font-size:11px;color:var(--muted);margin-top:14px}
     <span class="k">The daily grind</span>
     <h2>The counter runs the shop. So why is the counter a whiteboard?</h2>
     <p class="sub">Independent shops don't lose money on the lift. They lose it at the counter - in the gaps between paper tickets, memory, and good intentions.</p>
-    <div class="cards">
-      <div class="card"><h3>The whiteboard is the system</h3><p>Every open job lives on a board or in a notebook - until someone erases the wrong line or the notebook walks off.</p></div>
-      <div class="card"><h3>Bikes stall on $12 parts</h3><p>A machine sits for two weeks because nobody tracked that one part was ordered, backordered, or never ordered at all.</p></div>
-      <div class="card"><h3>"Is my bike ready?" calls</h3><p>The phone rings all day with status questions, and every answer means stopping a tech to go look.</p></div>
-      <div class="card"><h3>Estimates on napkins</h3><p>Quotes get written fast, approved verbally, and argued about later because there's no record of what was promised.</p></div>
-      <div class="card"><h3>Balances in your head</h3><p>Who owes what, which ticket is paid, which one walked out - it's tracked in memory until it isn't.</p></div>
-      <div class="card"><h3>History in one person's head</h3><p>What was done to this bike last season, which parts, which jetting - it leaves the shop when a person does.</p></div>
+    <div class="board">
+      <div class="row"><h3>The whiteboard is the system</h3><p>Every open job lives on a board or in a notebook - until someone erases the wrong line or the notebook walks off.</p></div>
+      <div class="row"><h3>Bikes stall on $12 parts</h3><p>A machine sits for two weeks because nobody tracked that one part was ordered, backordered, or never ordered at all.</p></div>
+      <div class="row"><h3>"Is my bike ready?" calls</h3><p>The phone rings all day with status questions, and every answer means stopping a tech to go look.</p></div>
+      <div class="row"><h3>Estimates on napkins</h3><p>Quotes get written fast, approved verbally, and argued about later because there's no record of what was promised.</p></div>
+      <div class="row"><h3>Balances in your head</h3><p>Who owes what, which ticket is paid, which one walked out - it's tracked in memory until it isn't.</p></div>
+      <div class="row"><h3>History in one person's head</h3><p>What was done to this bike last season, which parts, which jetting - it leaves the shop when a person does.</p></div>
     </div>
   </div>
 </section>
@@ -258,13 +264,7 @@ footer .fine{width:100%;font-size:11px;color:var(--muted);margin-top:14px}
       <li><strong>Use it in parallel for 6-8 weeks.</strong> Run the front counter on MotoDesk next to your current process. Break it. Compare it.</li>
       <li><strong>Give us about 15 minutes a week.</strong> A short feedback call or note on what worked and what didn't. Your feedback decides what gets built next.</li>
     </ol>
-    <div class="facts">
-      <span class="chip">NO COST</span>
-      <span class="chip">NO CARD</span>
-      <span class="chip">NO OBLIGATION</span>
-      <span class="chip">WE HANDLE SETUP &amp; IMPORTS</span>
-      <span class="chip">~15 MIN / WEEK</span>
-    </div>
+    <p class="facts">No cost &middot; No card &middot; No obligation &middot; We handle setup &amp; imports &middot; About 15 minutes a week</p>
   </div>
 </section>
 
