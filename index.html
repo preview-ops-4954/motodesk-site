@@ -100,7 +100,7 @@ section .sub{max-width:44em;margin:0 0 30px}
 
 /* Demo */
 .video-frame{border:2px solid var(--line);box-shadow:6px 6px 0 var(--shadow);background:#000}
-.video-frame iframe{display:block;width:100%;aspect-ratio:16/9;border:0}
+.video-frame video{display:block;width:100%;aspect-ratio:16/9;border:0;background:#000}
 .video-note{margin-top:14px;font-size:13px}
 
 /* Boundaries */
@@ -225,7 +225,10 @@ footer .fine{width:100%;font-size:11px;color:var(--muted);margin-top:14px}
     <h2>The 88-second tour</h2>
     <p class="sub">A narrated walkthrough of the real product - front counter, work orders, diary, parts, and customers - running on fictional demo shop data.</p>
     <div class="video-frame">
-      <iframe src="https://drive.google.com/file/d/1UQBpm3Pikb7jvKsJZy8H0HEvTtHQ2yQP/preview" title="MotoDesk 88-second narrated demo video" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
+      <video controls preload="none" poster="/demo-poster.jpg" title="MotoDesk 88-second narrated demo video">
+        <source src="/demo.mp4" type="video/mp4">
+        Your browser can't play this video. <a href="https://drive.google.com/file/d/1UQBpm3Pikb7jvKsJZy8H0HEvTtHQ2yQP/view">Watch it on Google Drive instead</a>.
+      </video>
     </div>
     <p class="video-note">Trouble playing? <a href="https://drive.google.com/file/d/1UQBpm3Pikb7jvKsJZy8H0HEvTtHQ2yQP/view">Open the demo video directly</a>.</p>
   </div>
