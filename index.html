@@ -81,6 +81,7 @@ nav.main a:hover{color:var(--accent-dark);text-decoration:underline}
 .cta-row{display:flex;flex-wrap:wrap;gap:14px}
 .panel{background:var(--card);border:2px solid var(--line);box-shadow:6px 6px 0 var(--shadow);padding:22px}
 .panel h3{font-size:22px;text-transform:uppercase;margin-bottom:10px}
+.hero-video{margin-top:40px}
 .stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
 .stat{border:2px solid var(--line);padding:10px 12px;background:#f8f3e4}
 .stat b{display:block;font-family:'Barlow Condensed',Arial,sans-serif;font-size:30px;line-height:1}
@@ -170,8 +171,8 @@ footer .fine{width:100%;font-size:11px;color:var(--muted);margin-top:14px}
       <h1>Know where <em>every bike</em> stands.</h1>
       <p class="lede">MotoDesk is front-counter software for independent motorcycle and powersports shops: estimates, work orders, scheduling, customer and bike service history, parts and labor tracking, and balances. It replaces the whiteboard, the notebook, and the "let me check and call you back."</p>
       <div class="cta-row">
-        <a class="btn accent" href="#demo">Watch the 88-second demo</a>
-        <a class="btn plain" href="mailto:hello@getmotodesk.com?subject=MotoDesk%20pilot%20inquiry&amp;body=Shop%20name%3A%0ACity%3A%0AHow%20you%20track%20work%20today%3A%0A">Join the free pilot</a>
+        <a class="btn accent" href="mailto:hello@getmotodesk.com?subject=MotoDesk%20pilot%20inquiry&amp;body=Shop%20name%3A%0ACity%3A%0AHow%20you%20track%20work%20today%3A%0A">Join the free pilot</a>
+        <a class="btn plain" href="#demo">Full 88-second walkthrough</a>
       </div>
     </div>
     <div class="panel" aria-label="Sample front counter view">
@@ -184,6 +185,15 @@ footer .fine{width:100%;font-size:11px;color:var(--muted);margin-top:14px}
       </div>
       <p class="sample-tag">SAMPLE VIEW · FICTIONAL DEMO SHOP DATA</p>
     </div>
+  </div>
+  <div class="hero-video">
+    <div class="video-frame">
+      <video autoplay muted loop playsinline controls preload="metadata" poster="/promo-poster.jpg" aria-label="One-minute MotoDesk promo: shop problems, then the product solving them. Narrated; starts muted.">
+        <source src="/promo.mp4" type="video/mp4">
+        Your browser can't play this video. <a href="#demo">See the full 88-second walkthrough below</a>.
+      </video>
+    </div>
+    <p class="video-note">One minute: the pain, then the product. Starts muted - turn sound on for the narration.</p>
   </div>
 </div>
 
@@ -221,8 +231,8 @@ footer .fine{width:100%;font-size:11px;color:var(--muted);margin-top:14px}
 
 <section id="demo">
   <div class="wrap">
-    <span class="k">See it work</span>
-    <h2>The 88-second tour</h2>
+    <span class="k">Want the details?</span>
+    <h2>See the full 88-second walkthrough</h2>
     <p class="sub">A narrated walkthrough of the real product - front counter, work orders, diary, parts, and customers - running on fictional demo shop data.</p>
     <div class="video-frame">
       <video controls preload="none" poster="/demo-poster.jpg" title="MotoDesk 88-second narrated demo video">
@@ -319,5 +329,10 @@ footer .fine{width:100%;font-size:11px;color:var(--muted);margin-top:14px}
   </div>
 </footer>
 
+<script>
+if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.querySelectorAll('video[autoplay]').forEach(function (v) { v.removeAttribute('autoplay'); v.pause(); });
+}
+</script>
 </body>
 </html>

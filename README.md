@@ -7,6 +7,9 @@ lives separately at https://app.getmotodesk.com/ (repo: motodesk-staging).
 - `index.html` - the whole page, self-contained (inline CSS, no build step, no JS)
 - `favicon.svg` - site icon
 - `og.png` - social share image (1200x630), generated from a screenshot of the hero
+- `promo.mp4` / `promo-poster.jpg` - 60s hybrid hero promo (b-roll + product UI), sources and licenses in `PROMO-CREDITS.md`
+- `demo.mp4` / `demo-poster.jpg` - full 88-second narrated product walkthrough
+- `PROMO-CREDITS.md` - source and license manifest for the promo (Mixkit b-roll, own product capture, fonts)
 - `robots.txt`, `sitemap.xml` - crawl basics
 
 ## Deploy
