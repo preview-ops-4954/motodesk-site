@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MotoDesk - Front-counter software for independent motorcycle shops</title>
+<meta name="description" content="MotoDesk is front-counter software for independent motorcycle and powersports shops: estimates, work orders, scheduling, service history, parts, and balances. Watch the 88-second demo and join the free 6-8 week pilot.">
+<link rel="canonical" href="https://getmotodesk.com/">
+<meta name="theme-color" content="#f4efdf">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="MotoDesk">
+<meta property="og:title" content="MotoDesk - Front-counter software for independent motorcycle shops">
+<meta property="og:description" content="Estimates, work orders, scheduling, service history, parts, and balances - built for independent motorcycle and powersports shops. Watch the 88-second demo.">
+<meta property="og:url" content="https://getmotodesk.com/">
+<meta property="og:image" content="https://getmotodesk.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MotoDesk - Front-counter software for independent motorcycle shops">
+<meta name="twitter:description" content="Estimates, work orders, scheduling, service history, parts, and balances for independent motorcycle and powersports shops. Free 6-8 week pilot.">
+<meta name="twitter:image" content="https://getmotodesk.com/og.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "MotoDesk",
+  "url": "https://getmotodesk.com/",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": "Front-counter software for independent motorcycle and powersports shops: estimates, work orders, scheduling, customer and bike service history, parts and labor tracking, and balances.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free 6-8 week pilot for independent shops" }
+}
+</script>
+<style>
+:root{
+  --paper:#f4efdf; --card:#fffdf5; --ink:#111; --muted:#5f5a4e;
+  --accent:#ef5b24; --accent-dark:#b84215; --shadow:#aaa28f; --line:#111;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:16px; line-height:1.6;
+}
+h1,h2,h3{font-family:'Barlow Condensed',Arial,sans-serif;letter-spacing:.04em;line-height:1.05;margin:0}
+a{color:var(--accent-dark)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--accent-dark);outline-offset:2px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;padding:10px 16px;z-index:50}
+.skip:focus{left:0}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.k{font-size:11px;font-weight:600;letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
+
+/* Header */
+header.site{border-bottom:3px solid var(--line);background:var(--card)}
+header.site .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding-top:14px;padding-bottom:14px}
+.wordmark{font-family:'Barlow Condensed',Arial,sans-serif;font-size:30px;font-weight:700;letter-spacing:.06em;text-decoration:none;color:var(--ink)}
+.wordmark span{color:var(--accent)}
+nav.main{margin-left:auto;display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+nav.main a{color:var(--ink);text-decoration:none;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+nav.main a:hover{color:var(--accent-dark);text-decoration:underline}
+.btn{display:inline-block;border:2px solid var(--line);padding:11px 18px;font:700 14px 'IBM Plex Mono',monospace;text-decoration:none;cursor:pointer;box-shadow:4px 4px 0 var(--shadow)}
+.btn.accent{background:var(--accent);color:#fff}
+.btn.accent:hover{background:var(--accent-dark)}
+.btn.plain{background:var(--card);color:var(--ink)}
+.btn.plain:hover{background:#efe9d6}
+.btn:active{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--shadow)}
+.chip{display:inline-block;border:2px solid var(--line);background:#efe9d6;padding:4px 10px;font:600 11px 'IBM Plex Mono',monospace;letter-spacing:.12em}
+
+/* Hero */
+.hero{padding:64px 0 48px;border-bottom:3px solid var(--line)}
+.hero .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(44px,7vw,84px);font-weight:700;text-transform:uppercase}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.lede{font-size:17px;max-width:34em;margin:20px 0 28px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px}
+.panel{background:var(--card);border:2px solid var(--line);box-shadow:6px 6px 0 var(--shadow);padding:22px}
+.panel h3{font-size:22px;text-transform:uppercase;margin-bottom:10px}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.stat{border:2px solid var(--line);padding:10px 12px;background:#f8f3e4}
+.stat b{display:block;font-family:'Barlow Condensed',Arial,sans-serif;font-size:30px;line-height:1}
+.stat span{font-size:11px;font-weight:600;letter-spacing:.1em;color:var(--muted)}
+.sample-tag{margin-top:14px;font-size:10px;letter-spacing:.12em;color:var(--muted)}
+
+/* Sections */
+section{padding:56px 0;border-bottom:3px solid var(--line)}
+section h2{font-size:clamp(32px,4.5vw,52px);text-transform:uppercase;margin:6px 0 10px}
+section .sub{max-width:44em;margin:0 0 30px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:2px solid var(--line);box-shadow:5px 5px 0 var(--shadow);padding:18px}
+.card h3{font-size:21px;text-transform:uppercase;margin-bottom:6px}
+.card p{margin:0;font-size:14px}
+.card .k{display:block;margin-bottom:8px}
+.cards.two{grid-template-columns:repeat(2,1fr)}
+
+/* Demo */
+.video-frame{border:2px solid var(--line);box-shadow:6px 6px 0 var(--shadow);background:#000}
+.video-frame iframe{display:block;width:100%;aspect-ratio:16/9;border:0}
+.video-note{margin-top:14px;font-size:13px}
+
+/* Boundaries */
+.bound .card{border-style:dashed}
+.bound .card h3::before{content:"LOCKED · ";color:var(--accent-dark)}
+
+/* Pilot */
+.steps{counter-reset:step;list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.steps li{counter-increment:step;background:var(--card);border:2px solid var(--line);box-shadow:5px 5px 0 var(--shadow);padding:16px 18px 16px 64px;position:relative}
+.steps li::before{content:counter(step,decimal-leading-zero);position:absolute;left:16px;top:16px;font-family:'Barlow Condensed',Arial,sans-serif;font-size:28px;font-weight:700;color:var(--accent)}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+
+/* FAQ */
+details{background:var(--card);border:2px solid var(--line);box-shadow:4px 4px 0 var(--shadow);margin-bottom:12px;padding:0}
+details summary{cursor:pointer;list-style:none;padding:14px 16px;font-weight:700;font-size:14px;letter-spacing:.04em;text-transform:uppercase}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";float:right;font-family:'Barlow Condensed',Arial,sans-serif;font-size:20px;color:var(--accent)}
+details[open] summary::after{content:"-"}
+details .a{padding:0 16px 14px;font-size:14px}
+
+/* Final CTA */
+.final{padding:64px 0;text-align:center;border-bottom:3px solid var(--line)}
+.final h2{font-size:clamp(36px,5vw,60px);text-transform:uppercase;margin-bottom:12px}
+.final p{max-width:36em;margin:0 auto 26px}
+.privacy{margin-top:18px;font-size:12px;color:var(--muted)}
+
+/* Footer */
+footer.site{padding:28px 0 40px}
+footer.site .wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
+footer.site a{color:var(--ink)}
+footer .fine{width:100%;font-size:11px;color:var(--muted);margin-top:14px}
+
+@media (max-width:860px){
+  .hero .grid{grid-template-columns:1fr}
+  .cards,.cards.two{grid-template-columns:1fr}
+  .hero{padding:40px 0 36px}
+  section{padding:40px 0}
+  .btn{width:100%;text-align:center}
+  nav.main{margin-left:0;width:100%;justify-content:flex-start}
+  nav.main .btn{width:auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap">
+    <a class="wordmark" href="/">MOTO<span>DESK</span></a>
+    <span class="chip">PRIVATE PILOT</span>
+    <nav class="main" aria-label="Main">
+      <a href="#product">Product</a>
+      <a href="#demo">Demo</a>
+      <a href="#pilot">Pilot</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn plain" href="https://app.getmotodesk.com/">Shop login</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="hero">
+  <div class="wrap grid">
+    <div>
+      <span class="k">Built with independent motorcycle &amp; powersports shops</span>
+      <h1>Know where <em>every bike</em> stands.</h1>
+      <p class="lede">MotoDesk is front-counter software for independent motorcycle and powersports shops: estimates, work orders, scheduling, customer and bike service history, parts and labor tracking, and balances. It replaces the whiteboard, the notebook, and the "let me check and call you back."</p>
+      <div class="cta-row">
+        <a class="btn accent" href="#demo">Watch the 88-second demo</a>
+        <a class="btn plain" href="mailto:hello@getmotodesk.com?subject=MotoDesk%20pilot%20inquiry&amp;body=Shop%20name%3A%0ACity%3A%0AHow%20you%20track%20work%20today%3A%0A">Join the free pilot</a>
+      </div>
+    </div>
+    <div class="panel" aria-label="Sample front counter view">
+      <span class="k">Front counter · shop floor at a glance</span>
+      <div class="stat-grid">
+        <div class="stat"><b>4</b><span>OPEN JOBS</span></div>
+        <div class="stat"><b>1</b><span>WAITING PARTS</span></div>
+        <div class="stat"><b>1</b><span>READY FOR PICKUP</span></div>
+        <div class="stat"><b>$1,130</b><span>OPEN BALANCE</span></div>
+      </div>
+      <p class="sample-tag">SAMPLE VIEW · FICTIONAL DEMO SHOP DATA</p>
+    </div>
+  </div>
+</div>
+
+<section id="problem">
+  <div class="wrap">
+    <span class="k">The daily grind</span>
+    <h2>The counter runs the shop. So why is the counter a whiteboard?</h2>
+    <p class="sub">Independent shops don't lose money on the lift. They lose it at the counter - in the gaps between paper tickets, memory, and good intentions.</p>
+    <div class="cards">
+      <div class="card"><h3>The whiteboard is the system</h3><p>Every open job lives on a board or in a notebook - until someone erases the wrong line or the notebook walks off.</p></div>
+      <div class="card"><h3>Bikes stall on $12 parts</h3><p>A machine sits for two weeks because nobody tracked that one part was ordered, backordered, or never ordered at all.</p></div>
+      <div class="card"><h3>"Is my bike ready?" calls</h3><p>The phone rings all day with status questions, and every answer means stopping a tech to go look.</p></div>
+      <div class="card"><h3>Estimates on napkins</h3><p>Quotes get written fast, approved verbally, and argued about later because there's no record of what was promised.</p></div>
+      <div class="card"><h3>Balances in your head</h3><p>Who owes what, which ticket is paid, which one walked out - it's tracked in memory until it isn't.</p></div>
+      <div class="card"><h3>History in one person's head</h3><p>What was done to this bike last season, which parts, which jetting - it leaves the shop when a person does.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="product">
+  <div class="wrap">
+    <span class="k">In the pilot today</span>
+    <h2>What MotoDesk does right now</h2>
+    <p class="sub">No roadmap promises - this is what pilot shops actually use.</p>
+    <div class="cards">
+      <div class="card"><span class="k">Front counter</span><h3>The floor at a glance</h3><p>Open jobs, bikes waiting on parts, bikes ready for pickup, and open balances - one screen, current, visible to the whole counter.</p></div>
+      <div class="card"><span class="k">Work orders</span><h3>Estimate to ticket</h3><p>Build the estimate, turn it into a work order, track labor and parts line items, and move the job through clear statuses.</p></div>
+      <div class="card"><span class="k">Shop diary</span><h3>The week, planned</h3><p>Schedule jobs and appointments so Monday's chaos is a plan on Friday instead of a surprise.</p></div>
+      <div class="card"><span class="k">Parts counter</span><h3>Every part accounted for</h3><p>Track what's on order, what's arrived, and what's installed - so no bike waits silently on a missing bolt.</p></div>
+      <div class="card"><span class="k">Customers &amp; bikes</span><h3>History that stays</h3><p>Every customer and every machine keeps its full service history in the shop, not in someone's memory.</p></div>
+      <div class="card"><span class="k">Balances</span><h3>Who owes what</h3><p>Every open ticket shows its balance, so nothing leaves the floor unpaid and nothing gets double-chased.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="demo">
+  <div class="wrap">
+    <span class="k">See it work</span>
+    <h2>The 88-second tour</h2>
+    <p class="sub">A narrated walkthrough of the real product - front counter, work orders, diary, parts, and customers - running on fictional demo shop data.</p>
+    <div class="video-frame">
+      <iframe src="https://drive.google.com/file/d/1UQBpm3Pikb7jvKsJZy8H0HEvTtHQ2yQP/preview" title="MotoDesk 88-second narrated demo video" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
+    </div>
+    <p class="video-note">Trouble playing? <a href="https://drive.google.com/file/d/1UQBpm3Pikb7jvKsJZy8H0HEvTtHQ2yQP/view">Open the demo video directly</a>.</p>
+  </div>
+</section>
+
+<section id="boundaries" class="bound">
+  <div class="wrap">
+    <span class="k">On purpose</span>
+    <h2>Deliberately not in the pilot - yet</h2>
+    <p class="sub">We'd rather tell you exactly what's gated than have you find out the hard way. These stay locked until pilot shops prove the core workflows.</p>
+    <div class="cards">
+      <div class="card"><h3>Payments: log-only</h3><p>MotoDesk records balances and payments you take in the shop. It does not charge cards, take online payments, or touch your money.</p></div>
+      <div class="card"><h3>Customer messaging: draft-only</h3><p>Pickup and status reminders are prepared as drafts for your review. Nothing messages your customers by itself.</p></div>
+      <div class="card"><h3>Supplier ordering: locked</h3><p>Parts are tracked from needed to installed. Orders with your suppliers still happen the way you do them today.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="pilot">
+  <div class="wrap">
+    <span class="k">Free 6-8 week pilot</span>
+    <h2>Run it alongside what you do today</h2>
+    <p class="sub">No rip-and-replace. Your current system - paper, spreadsheets, or other software - stays the source of truth until you tell us otherwise.</p>
+    <ol class="steps">
+      <li><strong>Tell us about your shop.</strong> One email: your shop, your city, and how you track work today. That's the whole application.</li>
+      <li><strong>We set it up for you.</strong> We build your shop's workspace and import your customers, bikes, and open jobs. You don't do data entry to start.</li>
+      <li><strong>Use it in parallel for 6-8 weeks.</strong> Run the front counter on MotoDesk next to your current process. Break it. Compare it.</li>
+      <li><strong>Give us about 15 minutes a week.</strong> A short feedback call or note on what worked and what didn't. Your feedback decides what gets built next.</li>
+    </ol>
+    <div class="facts">
+      <span class="chip">NO COST</span>
+      <span class="chip">NO CARD</span>
+      <span class="chip">NO OBLIGATION</span>
+      <span class="chip">WE HANDLE SETUP &amp; IMPORTS</span>
+      <span class="chip">~15 MIN / WEEK</span>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <span class="k">Fair questions</span>
+    <h2>FAQ</h2>
+    <details>
+      <summary>Is it really free?</summary>
+      <div class="a">Yes. The 6-8 week pilot costs nothing, we never ask for a card, and there's no obligation to continue. Pilot shops get the software, setup, and data imports free in exchange for honest weekly feedback.</div>
+    </details>
+    <details>
+      <summary>Do I have to replace my current system?</summary>
+      <div class="a">No. MotoDesk runs alongside whatever you use today - paper, a whiteboard, spreadsheets, or other software. Your current process stays the source of truth for the whole pilot unless you decide to switch.</div>
+    </details>
+    <details>
+      <summary>What happens to my shop's data?</summary>
+      <div class="a">It's your data. We use it only to run your pilot workspace - never sold, never shared, never used to train anything. If the pilot isn't a fit, we export your customers, bikes, and history and delete the workspace.</div>
+    </details>
+    <details>
+      <summary>Does it take payments or message my customers?</summary>
+      <div class="a">No - deliberately. Payments are log-only (you record what you took, nothing is charged), customer reminders are drafts you approve, and supplier ordering stays the way you do it today. Those unlock later, only after the core workflows earn it.</div>
+    </details>
+    <details>
+      <summary>Who is building this?</summary>
+      <div class="a">MotoDesk is built in Austin, Texas with independent motorcycle and powersports shops. The pilot exists so the product gets shaped by real counters, not guesses.</div>
+    </details>
+  </div>
+</section>
+
+<div class="final">
+  <div class="wrap">
+    <span class="k">A few shops at a time</span>
+    <h2>Put your counter on MotoDesk</h2>
+    <p>We're onboarding a small number of independent shops for the next pilot group. One email gets you on the list.</p>
+    <a class="btn accent" href="mailto:hello@getmotodesk.com?subject=MotoDesk%20pilot%20inquiry&amp;body=Shop%20name%3A%0ACity%3A%0AHow%20you%20track%20work%20today%3A%0A">Email hello@getmotodesk.com</a>
+    <p class="privacy">No form, no newsletter, no tracking pixels. Your email goes straight to the pilot team and we only use it to reply to you.</p>
+  </div>
+</div>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <a class="wordmark" href="/">MOTO<span>DESK</span></a>
+    <nav aria-label="Footer">
+      <a href="mailto:hello@getmotodesk.com">hello@getmotodesk.com</a> ·
+      <a href="https://app.getmotodesk.com/">Shop login</a> ·
+      <a href="#demo">Demo</a>
+    </nav>
+    <p class="fine">MotoDesk is in private pilot. Product screens and figures shown are fictional demo data from a sample shop. Built in Austin, TX. © 2026 MotoDesk.</p>
+  </div>
+</footer>
+
+</body>
+</html>
