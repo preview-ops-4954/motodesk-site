@@ -1,6 +1,6 @@
 # getmotodesk.com homepage
 
-Static marketing homepage for MotoDesk (https://getmotodesk.com). The product app
+Static marketing homepage for TorqueBench (https://getmotodesk.com). The product app
 lives separately at https://app.getmotodesk.com/ (repo: motodesk-staging).
 
 ## Contents
