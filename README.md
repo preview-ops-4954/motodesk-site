@@ -3,9 +3,10 @@
 Static marketing homepage for TorqueBench (https://gettorquebench.com). The product app
 lives separately at https://torquebench.app/ (repo: motodesk-staging).
 
-Legacy domains getmotodesk.com and app.getmotodesk.com remain attached to the same
-Render services as aliases; the contact inbox is still hello@getmotodesk.com
-(Google Workspace lives on that domain for now).
+The legacy getmotodesk.com / app.getmotodesk.com pair was detached from the Render
+services on 2026-09-17 and no longer serves the product. Contact inbox:
+motoshop.research@mail.instinct.com. (Google Workspace mail on getmotodesk.com
+still works; its MX/TXT records are separate and untouched.)
 
 ## Contents
 - `index.html` - the whole page, self-contained (inline CSS, no build step, no JS)
@@ -17,8 +18,8 @@ Render services as aliases; the contact inbox is still hello@getmotodesk.com
 Any static host works: upload these files and serve the directory as the site root.
 Currently deployed as a Render static site from this repo with publish directory `/`.
 
-Custom domains on the Render static site: `gettorquebench.com` (apex),
-`www.gettorquebench.com`, plus legacy `getmotodesk.com` and `www.getmotodesk.com`.
+Custom domains on the Render static site: `gettorquebench.com` (apex) and
+`www.gettorquebench.com`.
 DNS is at Porkbun: apex uses an ALIAS record to the Render target
 (`motodesk-site.onrender.com`), `www` uses a CNAME. Do not touch the MX/TXT records
 on getmotodesk.com - Google Workspace mail depends on them.
