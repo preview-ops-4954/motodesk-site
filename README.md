@@ -4,7 +4,7 @@ Static marketing homepage for TorqueBench (https://gettorquebench.com). The prod
 lives separately at https://torquebench.app/ (repo: motodesk-staging).
 
 Legacy domains getmotodesk.com and app.getmotodesk.com remain attached to the same
-Render services as aliases; the contact inbox is still hello@getmotodesk.com
+Render services as aliases; the contact inbox is still motoshop.research@mail.instinct.com
 (Google Workspace lives on that domain for now).
 
 ## Contents
