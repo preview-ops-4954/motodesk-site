@@ -1,7 +1,11 @@
-# getmotodesk.com homepage
+# gettorquebench.com homepage
 
-Static marketing homepage for TorqueBench (https://getmotodesk.com). The product app
-lives separately at https://app.getmotodesk.com/ (repo: motodesk-staging).
+Static marketing homepage for TorqueBench (https://gettorquebench.com). The product app
+lives separately at https://torquebench.app/ (repo: motodesk-staging).
+
+Legacy domains getmotodesk.com and app.getmotodesk.com remain attached to the same
+Render services as aliases; the contact inbox is still hello@getmotodesk.com
+(Google Workspace lives on that domain for now).
 
 ## Contents
 - `index.html` - the whole page, self-contained (inline CSS, no build step, no JS)
@@ -13,9 +17,11 @@ lives separately at https://app.getmotodesk.com/ (repo: motodesk-staging).
 Any static host works: upload these files and serve the directory as the site root.
 Currently deployed as a Render static site from this repo with publish directory `/`.
 
-Custom domains: `getmotodesk.com` (apex) and `www.getmotodesk.com`. DNS is at Porkbun:
-apex uses an ALIAS record to the Render target, `www` uses a CNAME. Do not touch the
-MX/TXT records - Google Workspace mail for getmotodesk.com depends on them.
+Custom domains on the Render static site: `gettorquebench.com` (apex),
+`www.gettorquebench.com`, plus legacy `getmotodesk.com` and `www.getmotodesk.com`.
+DNS is at Porkbun: apex uses an ALIAS record to the Render target
+(`motodesk-site.onrender.com`), `www` uses a CNAME. Do not touch the MX/TXT records
+on getmotodesk.com - Google Workspace mail depends on them.
 
 ## Editing
 Edit `index.html` directly; there is no framework. Keep the workbench identity:
